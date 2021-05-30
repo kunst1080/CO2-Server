@@ -8,8 +8,5 @@ services:
     environment:
       - WS_HOST
       - WS_PORT
-    volumes:
-      - $PWD:/usr/src/app
     devices:
       - "/dev/hidraw0:/dev/hidraw0"
-    command: python main.py

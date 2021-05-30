@@ -5,7 +5,7 @@ import os
 
 from CO2Meter import *
 
-address = os.getenv("WS_HOST", "localhost")
+address = os.getenv("WS_HOST", "127.0.0.1")
 port = os.getenv("WS_PORT", "1111")
 interval = int(os.getenv("INTERVAL", 2))
 

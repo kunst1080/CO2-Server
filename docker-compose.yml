@@ -5,6 +5,7 @@ services:
     build: .
     container_name: co2-server
     network_mode: host
+    restart: unless-stopped
     environment:
       - WS_HOST
       - WS_PORT
